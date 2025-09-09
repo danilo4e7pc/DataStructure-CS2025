@@ -13,17 +13,17 @@ int main(){
     scanf("%d",&n);
 
     // Reservando memoria para un arreglo de punteros (char*)
-    char **articulos = malloc(n*sizeof(char*));
+    char **articulos = (char**)malloc(n*sizeof(char*));
     for(int i=0; i<n; i++){
 
         // Reservando memoria (30) para cada puntero (cadena) dentro del arreglo
-        articulos[i] = malloc(30 * sizeof(char));
+        articulos[i] = (char*)malloc(30 * sizeof(char));
     }
 
     // Reservando memoria para los siguientes arreglos
-    float *Precio = malloc(n * sizeof(float));
-    float *pTotal = malloc(n * sizeof(float));
-    int *cantidad = malloc(n * sizeof(int));
+    float *Precio = (float*)malloc(n * sizeof(float));
+    float *pTotal = (float*)malloc(n * sizeof(float));
+    int *cantidad = (int*)malloc(n * sizeof(int));
 
     printf("Datos de cada articulo\n");
     for(int i=0; i<n; i++)
