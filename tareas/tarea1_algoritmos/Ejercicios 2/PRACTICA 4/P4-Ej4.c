@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
 
 typedef struct {
     char nombre[40];
@@ -69,7 +69,7 @@ int main() {
 
         printf("Sueldo mensual: ");
         scanf("%f", &emp[i].sueldoMensual);
-        printf("Antigüedad (años): ");
+        printf("Antiguedad (años): ");
         scanf("%d", &emp[i].antiguedad);
         getchar();
 
